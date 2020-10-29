@@ -13,6 +13,25 @@ export const Container = styled.div`
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows:repeat(6, 1fr);
+
+    /*A responsividade dos botoes precisou ser colocado aqui, pois precisa ser inserido no elemento pai  */
+    .ButtonsSection{
+       @media(min-width:580px){
+           padding:0 25%;
+       }
+
+       @media(min-width:740px){
+           padding:0 30%;
+       }
+
+       @media(min-width:940px){
+           padding:0 35%;
+       }
+
+       @media(min-width:1100px){
+           padding:0 38%;
+       }
+    }
 `;
 
 export const Letters = styled.div`
@@ -118,6 +137,20 @@ export const SearchInput = styled.div`
          box-shadow: 1px 1px 1px 1px #dfe1e5; 
     }
 
+    .BoxSearchClass{
+        @media(min-width:420px) and (max-width:550px){
+            width:90%;
+        }
+
+        @media(min-width:770px){
+            width:50%;
+        }
+
+        @media(min-width:1050px){
+            width:40%;
+        }
+    }
+
 `;
 
 export const BoxSearch = styled.div`
@@ -129,7 +162,7 @@ export const BoxSearch = styled.div`
     justify-content:space-between;
     align-items: center; 
 
-    width:90%;
+    width:60%;
     height:50px;
     padding: 0 10px;
 
@@ -159,7 +192,6 @@ export const BoxSearch = styled.div`
         background-color:white;
         padding: 0 10px;
     }
-
 `;
 
 export const Buttons = styled.div`
@@ -188,6 +220,8 @@ export const Buttons = styled.div`
     button:hover{
         border:1px solid #dadce0;
     }
+
+    
 `;
 
 export const SmallText = styled.div`

@@ -39,7 +39,7 @@ const Main = () => {
         </BoxSearch>
       </SearchInput>
 
-      <Buttons>
+      <Buttons className="ButtonsSection">
         <button>Pesquisa Google</button>
         <button>Estou com sorte</button>
       </Buttons>
