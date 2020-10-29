@@ -113,7 +113,6 @@ export const SearchInput = styled.div`
 `;
 
 export const Buttons = styled.div`
-    background-color:blue;
 
     grid-column-start:1;
     grid-column-end:1;
@@ -121,15 +120,46 @@ export const Buttons = styled.div`
     grid-row-start:4;
     grid-row-end:5;
 
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0 25%;
+
+    button{
+        border:none;
+        color:#252525;
+        padding:10px;
+        font-size:14px;
+        border-radius:5px;
+
+        background-color:#f8f9fa;
+    }
+
+    button:hover{
+        border:1px solid #dadce0;
+    }
 `;
 
 export const SmallText = styled.div`
-    background-color:brown;
 
     grid-column-start:1;
     grid-column-end:1;
 
     grid-row-start:5;
     grid-row-end:7;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+
+    font-size:12px;
+
+    padding-bottom:70px;
+
+    span{
+        color:blue;
+        padding-left:5px;
+    }
 
 `;

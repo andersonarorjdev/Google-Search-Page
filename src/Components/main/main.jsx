@@ -28,11 +28,12 @@ const Main = () => {
       </SearchInput>
 
       <Buttons>
-
+        <button>Pesquisa Google</button>
+        <button>Estou com sorte</button>
       </Buttons>
 
       <SmallText>
-
+        Desenvolvido por AndersonArorj: <span>Developed by AndersonArorj</span>
       </SmallText>
     </Container>
   );
