@@ -102,13 +102,63 @@ export const Letters = styled.div`
 `;
 
 export const SearchInput = styled.div`
-    background-color:#0eb13f;
 
     grid-column-start:1;
     grid-column-end:1;
 
     grid-row-start:3;
     grid-row-end:4;
+
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+
+    .BoxSearchClass:hover{
+         box-shadow: 1px 1px 1px 1px #dfe1e5; 
+    }
+
+`;
+
+export const BoxSearch = styled.div`
+    display:flex;
+
+    background-color:blue;
+
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center; 
+
+    width:90%;
+    height:50px;
+    padding: 0 10px;
+
+    background-color:white;
+    border: 2px solid #dfe1e5;
+    border-radius:30px;
+
+    .SearchIconClass{
+        width:25px;
+        height:25px;
+    }
+
+    .KeyboardIconClass{
+        width:25px;
+        height:25px;
+    }
+
+    .BoxSearchInput{
+        width:74vw;
+        height:45px;
+
+        border:none;
+    }
+
+    button{
+        border:none;
+        background-color:white;
+        padding: 0 10px;
+    }
 
 `;
 

@@ -2,7 +2,11 @@
 import React from 'react';
 
 //imports de estilizações do React.
-import { Container, Letters, SearchInput, Buttons, SmallText } from './styles-main';
+import { Container, Letters, SearchInput, BoxSearch, Buttons, SmallText } from './styles-main';
+
+//Imports de imagens e icones
+import SearchIcon from '../../assets/icons/loupe.svg';
+import KeyboardIcon from '../../assets/icons/keyboard.svg';
 
 const Main = () => {
   return (
@@ -24,7 +28,15 @@ const Main = () => {
       </Letters>
 
       <SearchInput>
-
+        <BoxSearch className="BoxSearchClass">
+          <button>
+            <img src={SearchIcon} alt="Pesquisar" className="SearchIconClass" srcset=""/>
+          </button>
+          <input type="search" className="BoxSearchInput" />
+          <button>
+            <img src={KeyboardIcon} alt="Teclado Virtual" className="KeyboardIconClass" srcset=""/>
+          </button>
+        </BoxSearch>
       </SearchInput>
 
       <Buttons>
