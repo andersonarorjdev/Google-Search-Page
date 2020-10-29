@@ -21,7 +21,7 @@ yarn install
 
 ```sh
 yarn run 
-```
+``` 
 
 ## Run tests
 

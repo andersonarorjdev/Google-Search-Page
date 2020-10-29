@@ -2,21 +2,24 @@
 import React from 'react';
 
 //Imports de estilizações do react;
-import {Container, Menu1, Menu2} from './style-header';
+import {Container, Menu, Menuicon} from './style-header';
 
+//Imports de imagens e icones
+import MenuIcon from '../../assets/icons/menu.svg';
+import UserPicture from '../../Images/profile.jpg'
 
 const header = props =>{
     return(
         <Container>
 
-          <Menu1>
-            <h1>Menu1</h1>
-          </Menu1>
-
-          <Menu2>
-            <h1>Menu2</h1>
-          </Menu2>
-
+          <Menu>
+              <a href="/" className="MenuItem">Gmail</a>
+              <a href="/" className="MenuItem">Imagens</a>
+            <button className="MenuItem">
+                <img src={MenuIcon} className="MenuIcon" alt="Icone do Menu" />
+            </button>
+            <img src={UserPicture} id="ProfileUser" className="MenuItem" alt="" />
+          </Menu> 
         </Container>
     );
 }

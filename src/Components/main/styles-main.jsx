@@ -8,9 +8,5 @@ export const Container = styled.div`
         margin: 0;
         box-sizing: border-box;
     }
-
-    grid-row-start:2;
-    grid-row-end:5;
-
     height:80vh;
 `;
